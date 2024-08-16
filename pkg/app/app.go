@@ -10,16 +10,6 @@ import (
 	"time"
 )
 
-const (
-	ConfigFilePathEnvVar                     = "CONFIG_FILE_PATH"
-	DefaultConfigFilePath                    = ".env"
-	DefaultHttpServerCertificateFilePath     = "server.crt"
-	DefaultHttpServerKeyFilePath             = "server.key"
-	DefaultHttpServerReadTimeout             = "15m"
-	DefaultHttpServerWriteTimeout            = "15m"
-	DefaultHttpServerGracefulShutdownTimeout = "2m"
-)
-
 type FuncSetup func()
 
 type FuncShutdown func()
