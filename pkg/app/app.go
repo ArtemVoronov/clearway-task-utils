@@ -15,9 +15,9 @@ const (
 	DefaultConfigFilePath                    = ".env"
 	DefaultHttpServerCertificateFilePath     = "server.crt"
 	DefaultHttpServerKeyFilePath             = "server.key"
-	DefaultHttpServerReadTimeout             = 15 * time.Minute
-	DefaultHttpServerWriteTimeout            = 15 * time.Minute
-	DefaultHttpServerGracefulShutdownTimeout = 2 * time.Minute
+	DefaultHttpServerReadTimeout             = "15m"
+	DefaultHttpServerWriteTimeout            = "15m"
+	DefaultHttpServerGracefulShutdownTimeout = "2m"
 )
 
 type FuncSetup func()
